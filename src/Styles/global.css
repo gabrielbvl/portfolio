@@ -1,0 +1,48 @@
+html {
+    --section-background-color: linear-gradient(
+        to bottom left,
+        rgba(17, 16, 16, 0.582),
+        rgba(12, 8, 24, 0.904)
+    );
+
+    --image-gradient: linear-gradient(
+        to bottom left,
+        rgba(17, 16, 16, 0.678),
+        rgba(12, 10, 22, 0.863)
+    );
+
+    --imp-text-color: #4d7ea8;
+}
+
+.blue_light {
+    color: var(--imp-text-color) !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+}
+
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #021526;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4d7ea8;
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #455b6e;
+    border-radius: 12px;
+}
