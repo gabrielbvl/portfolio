@@ -5,7 +5,7 @@ import ProjectRoutes from "./Routes";
 function App() {
     return (
         <div className="App">
-            <Header />
+            {/* <Header /> */}
             <ProjectRoutes />
         </div>
     );

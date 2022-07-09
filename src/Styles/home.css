@@ -73,6 +73,17 @@
     max-width: 450px;
 }
 
+.more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    transform: translate(0px);
+    animation: more_float 7s ease-in-out infinite;
+}
+
 @media (max-width: 767px) {
     .Typewriter__wrapper {
         font-size: 1.6em;
@@ -150,8 +161,11 @@
     flex-direction: column;
 }
 
+#first {
+    margin-top: 50px;
+}
+
 .home2_description {
-    padding-top: 50px;
     font-size: 1.2em;
     text-align: center;
     width: 90%;
@@ -161,6 +175,7 @@
     text-align: center;
     padding: 5px;
     color: white;
+    font-size: 22px;
 }
 
 .home2_social_list_links {
@@ -220,6 +235,20 @@
 }
 
 @keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes more_float {
     0% {
         transform: translatey(0px);
     }

@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import Curriculum from "../Pages/Curriculo";
 import Home from "../Pages/Home/index";
+import Projects from "../Pages/Projetos";
 import About from "../Pages/Sobre";
-// import Password from "../pages/password";
-// import PageOne from "../pages/pageOne";
 
 const ProjectRoutes = () => {
     return (
@@ -10,8 +10,8 @@ const ProjectRoutes = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<About />} />
-                <Route path="/curriculum" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/curriculum" element={<Curriculum />} />
             </Routes>
         </>
     );
