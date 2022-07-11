@@ -7,11 +7,26 @@
     z-index: -1;
 }
 
+/* .typewriter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.083);
+    width: 90%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.writer {
+    width: 80%;
+} */
+
 .img_about {
     width: 100%;
     margin-top: 70px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     transform: translate(0px);
@@ -21,11 +36,13 @@
 .img_about h1 {
     font-size: 3.5rem;
     color: aqua;
+    width: 45%;
+    text-align: center;
 }
 
 .img_about img {
     transition: 2s;
-    width: 30%;
+    width: 45%;
 }
 
 .about_principal {
@@ -37,6 +54,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.about_principal h1 {
+    background-color: rgba(45, 61, 73, 0.393);
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .techs {
@@ -51,34 +75,58 @@
     justify-content: space-between;
 }
 
+#techs_internal1 {
+    margin-bottom: 50px;
+    align-items: center;
+}
+
 .tech img {
     transition: 2s;
     max-width: 200px;
 }
 
-.about_no_tech {
+.title_about_description {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.about_tech {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    color: rgb(181, 168, 168);
 }
 
 .about_principal h2 {
+    width: 80%;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 20px;
     margin-top: 60px;
+    background-color: rgba(45, 61, 73, 0.393);
+}
+
+.body_about_description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .about_description {
     font-size: 1.4em;
-    text-align: center;
-    width: 80%;
+    width: 40%;
+    background-color: rgba(45, 61, 73, 0.393);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    font-size: 18px;
 }
 
 @media (max-width: 700px) {
+    .img_about {
+        flex-direction: column;
+    }
+
+    .img_about h1 {
+        transition: 2s;
+        width: 90%;
+    }
+
     .img_about img {
         transition: 2s;
         width: 80%;
@@ -95,6 +143,10 @@
 
     .about_tech p {
         text-align: justify;
+    }
+
+    .about_description {
+        width: 80%;
     }
 }
 
