@@ -94,7 +94,7 @@ function Header() {
                     />
                     Curriculo
                 </button>
-                <a href="https://github.com/gabrielbvlk" target={"blank"}>
+                <a href="https://github.com/gabrielbvlk/portfolio" target={"blank"}>
                     <button className="github_button">
                         <CgGitFork style={{ fontSize: "24px" }} />
                     </button>
