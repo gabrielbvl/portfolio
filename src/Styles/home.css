@@ -7,7 +7,6 @@
 }
 
 .home1_presentation {
-    padding-top: 40px;
     width: 40%;
 }
 
@@ -23,11 +22,10 @@
     background-position: top center;
     background-repeat: no-repeat;
     padding-bottom: 30px;
-    padding-top: 30px;
+    margin-top: 40px;
 }
 
 .home1_internal_container {
-    padding: 9rem 0 2rem;
     color: whitesmoke;
     text-align: left;
 }

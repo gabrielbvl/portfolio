@@ -74,17 +74,19 @@ function Home() {
                             </i>
                         </p>
                         <p className="home2_description">
-                            Eu desejo uma oportunidade de inserção no mercado como &nbsp;
+                            Eu desejo uma oportunidade de inserção no mercado como
                             <i>
-                                <b className="blue_light">Desenvolvedor Front-End</b> futuramente,
-                                pretendo estudar e quem sabe trabalhar com{" "}
-                                <b className="blue_light">desenvolvimento de jogos.</b>
+                                <b className="blue_light"> Desenvolvedor Front-End,</b> futuramente
+                                pretendo estudar novos frameworks front-end, porém,{" "}
+                                <b className="blue_light"> minha paixão é o React.</b>
                             </i>
                         </p>
                         <p className="home2_description">
                             Hoje estudo Back-End, vendo{" "}
                             <b className="blue_light">SQL, Postgress, Docker, Python, Typscript </b>{" "}
-                            e outras tecnologias relevantes para o back.
+                            e outras tecnologias relevantes para o back, assim que concluir essa
+                            etapa, irei entrar de cabeça no <b className="blue_light"> React</b> e
+                            me especializar o maximo que conseguir.
                         </p>
                     </section>
                     <section>

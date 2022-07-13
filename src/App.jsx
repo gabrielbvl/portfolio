@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import ProjectRoutes from "./Routes";
 
@@ -7,6 +8,7 @@ function App() {
         <div className="App">
             <Header />
             <ProjectRoutes />
+            <Footer />
         </div>
     );
 }

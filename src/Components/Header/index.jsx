@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/header.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import {
     AiFillStar,
@@ -12,25 +12,35 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 function Header() {
+    const [menuActive, setMenuActive] = useState(false);
+
     const navigate = useNavigate();
+
+    const toggleMode = () => {
+        setMenuActive(!menuActive);
+    };
 
     const goHome = () => {
         navigate("/");
+        setMenuActive(!menuActive);
         // toast.success("Bem vindo ao teste de Router Dom!");
     };
 
     const goAbout = () => {
         navigate("/about");
+        setMenuActive(!menuActive);
         // toast.success("Bem vindo ao teste de Router Dom!");
     };
 
     const goProjects = () => {
         navigate("/projects");
+        setMenuActive(!menuActive);
         // toast.success("Bem vindo ao teste de Router Dom!");
     };
 
     const goCurriculum = () => {
         navigate("/curriculum");
+        setMenuActive(!menuActive);
         // toast.success("Bem vindo ao teste de Router Dom!");
     };
 
@@ -41,6 +51,23 @@ function Header() {
                     Gabriel Bezerra
                 </button>
             </div>
+            {/* Hamburguer */}
+            <div className="hamburguer_container">
+                <div className={menuActive ? "icon iconActive" : "icon"} onClick={toggleMode}>
+                    <div className="hamburguer hamburguerIcon"></div>
+                </div>
+                <div className={menuActive ? "menu menuOpen" : "menu menuClose"}>
+                    <div className="list">
+                        <ul className="listItems">
+                            <li onClick={goHome}>Home</li>
+                            <li onClick={goAbout}>Sobre</li>
+                            <li onClick={goProjects}>Projetos</li>
+                            <li onClick={goCurriculum}>Curriculo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {/* Hamburguer */}
             <div className="header_container_buttons">
                 <button className="header_button" onClick={goHome}>
                     <AiOutlineHome
