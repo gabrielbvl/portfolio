@@ -10,7 +10,9 @@ function Footer() {
                 <button className="footer_logo">Gabriel Bezerra</button>
             </div>
             <div className="footer_container_logo">
-                <p className="footer_logo">Desenvolvedor Front-End</p>
+                <p className="footer_logo" id="footer_prof">
+                    Desenvolvedor Front-End
+                </p>
             </div>
             <div className="footer_container_buttons">
                 <ul className="footer_social_list_links">
