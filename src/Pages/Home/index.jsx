@@ -63,7 +63,7 @@ function Home() {
                             </div>
                         </div>
                         <p className="home2_description" id="first">
-                            Sou um ex perssonal trainer, com bacharelado e licenciatura em Educação
+                            Sou um ex personal trainer, com bacharelado e licenciatura em Educação
                             Física, já fui professor de crianças e adolescentes, nos ensinos
                             infantil, fundamental e medio e de adultos, na universidade.
                         </p>
