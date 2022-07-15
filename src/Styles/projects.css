@@ -13,28 +13,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     transform: translate(0px);
     animation: float 5s ease-in-out infinite;
 }
 
 .img_projects h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: aqua;
-    width: 45%;
+    width: 30%;
     text-align: center;
 }
 
 .img_projects img {
     transition: 2s;
-    width: 45%;
+    width: 30%;
 }
 
 .projects_container_internal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     padding: 10px;
 }
@@ -42,12 +42,12 @@
 .project {
     width: 300px;
     background-color: rgba(0, 255, 255, 0.277);
-    padding: 10px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 16px;
 }
 
 .project:hover {
